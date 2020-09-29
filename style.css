@@ -1,1 +1,111 @@
+html {
+  max-width: 90%;
+  box-sizing: border-box;
 
+  margin: auto;
+  padding: 0;
+}
+body {
+  max-width: 90%;
+  box-sizing: border-box;
+  display: grid;
+  font-size: 2em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 9fr 0.5fr;
+  grid-template-areas:
+    "header "
+    " main "
+    " footer ";
+
+  margin: auto;
+  padding: 0;
+  color: white;
+  background: white;
+}
+header {
+  text-align: center;
+  vertical-align: middle;
+  grid-area: header;
+  background: black;
+}
+header h1 {
+  text-decoration: underline;
+}
+main {
+  background-image: url(background-blue.jpg);
+  grid-area: main;
+  padding: 2em;
+  vertical-align: middle;
+  text-align: center;
+}
+main h2 {
+  text-decoration: underline;
+}
+main ul {
+  align-content: ;
+  text-align: justify;
+}
+main p {
+  color: #a9a9a9;
+  font-size: 0.8em;
+  text-align: justify;
+}
+a {
+  color: red;
+  padding: 1em;
+}
+hr {
+  margin: 2em;
+}
+table,
+th,
+td {
+  border: 1em solid black;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+blockquote {
+  background: grey;
+  border-left: 3px solid firebrick;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+  margin: auto;
+  padding: auto;
+  margin-top: 1em;
+  font-size: 160%;
+}
+
+footer {
+  text-align: center;
+  vertical-align: middle;
+  grid-area: footer;
+  background: burlywood;
+  font-size: 0.5em;
+}
+
+/* config pour nickAPP.html */
+/* header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: purple;
+}
+main {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  background: yellow;
+}
+footer {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  background: burlywood;
+} 
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 50px 100px 40px;
+  grid-template-rows: 300px 2000px 590px;}
+  */
