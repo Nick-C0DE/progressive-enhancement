@@ -18,10 +18,16 @@ body {
     " footer ";
 
   margin: auto;
-  padding: 0;
+  padding: auto;
   color: white;
-  background: white;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(22, 135, 237),
+    rgb(20, 55, 90)
+  );
+  background: linear-gradient(90deg, rgb(22, 135, 237), rgb(20, 55, 90));
 }
+
 header {
   text-align: center;
   vertical-align: middle;
@@ -30,6 +36,7 @@ header {
 }
 header h1 {
   text-decoration: underline;
+  background: yellow;
 }
 main {
   background-image: url(background-blue.jpg);
@@ -37,22 +44,32 @@ main {
   padding: 2em;
   vertical-align: middle;
   text-align: center;
+  display: no-repeat;
 }
 main h2 {
   text-decoration: underline;
 }
 main ul {
-  align-content: ;
   text-align: justify;
 }
 main p {
   color: #a9a9a9;
-  font-size: 0.8em;
+
   text-align: justify;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.3em;
+  color: darkred;
 }
+
 a {
-  color: red;
+  color: black;
   padding: 1em;
+}
+a:hover {
+  color: gold;
+}
+a:visited {
+  background-color: red;
 }
 hr {
   margin: 2em;
@@ -60,6 +77,7 @@ hr {
 table,
 th,
 td {
+  color: black;
   border: 1em solid black;
   align-items: center;
   align-content: center;
@@ -75,7 +93,9 @@ blockquote {
   width: 50%;
   margin: auto;
   padding: auto;
-  margin-top: 1em;
+  padding-left: 30px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   font-size: 160%;
 }
 
@@ -85,6 +105,22 @@ footer {
   grid-area: footer;
   background: burlywood;
   font-size: 0.5em;
+}
+.villagers {
+  border-left: green 2px solid;
+}
+.farmer {
+  border-left: blue 2px solid;
+}
+.bad {
+  color: red;
+}
+.good {
+  color: green;
+}
+img {
+  float: left;
+  position: fixed;
 }
 
 /* config pour nickAPP.html */
